@@ -21,8 +21,9 @@ int main(int argc, char *argv[]) {
         printf("Connection unsuccessful - Client Side\n");
         return 2;
     }
-
     char buffer[3000];
-    recv(network_socket, )
+    recv(network_socket, &buffer, sizeof(buffer), 0);
+    printf("%s", buffer);
+    close(network_socket);
     return 0;
 }
