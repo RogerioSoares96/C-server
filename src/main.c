@@ -22,6 +22,7 @@ int main(int argc, char *argv[]) {
         return 2;
     }
 
-    // recv(network_socket, )
+    char buffer[3000];
+    recv(network_socket, )
     return 0;
 }
