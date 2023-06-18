@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     int client_socket = socket(AF_INET, SOCK_STREAM, 0);
     struct sockaddr_in socket_address;
     socket_address.sin_family = AF_INET;
-    socket_address.sin_port = (atoi(argv[1]));
+    socket_address.sin_port = (htons(atoi(argv[1])));
     socket_address.sin_addr.s_addr = INADDR_ANY;
 
     int connection = connect(client_socket, (struct sockaddr *) &socket_address, sizeof(socket_address));
