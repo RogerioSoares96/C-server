@@ -1,1 +1,1 @@
-A C Server implementation
+A TCP Client-Server implementation
